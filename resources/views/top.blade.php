@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title></title>
+    <title>Calender Gpt</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'/>
     <link href="/style/index/assets/css/main.css" rel="stylesheet"/>
     <link href="/style/index/assets/css/indexs.css" rel="stylesheet"/>
@@ -62,7 +62,7 @@
 
 <nav class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="/"><strong>Plan</strong></a>
+        <a class="navbar-brand" href="/"><strong>Calendar Gpt</strong></a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -75,7 +75,7 @@
                     <a class="nav-link" href="/calendar">Calendar</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/plan_tabulation">Plan Tabulation</a>
+                    <a class="nav-link" href="/plan_tabulation">Plan Status</a>
                 </li>
             </ul>
             <ul class="navbar-nav ml-auto d-flex align-items-center">
@@ -105,7 +105,7 @@
                         </script>
                     <!-- <a class="nav-link" href="/user_exit">{{session('users_name')}}</a> -->
                     @else
-                        <a class="nav-link" href="/login">LOG In</a>
+                        <a class="nav-link" href="/login">Log In</a>
                     @endif
                 </li>
             </ul>

@@ -19,12 +19,12 @@
         <form action="/signup_store" method="post">
             @csrf
             <input type="text" name="user_name" placeholder="User name" value="{{ old('user_name') }}" required="" />
-            <input type="email" name="mailbox" placeholder="Mailbox" value="{{ old('mailbox') }}"  required="" />
+            <input type="email" name="mailbox" placeholder="Email" value="{{ old('mailbox') }}"  required="" />
             <input type="password" name="password" placeholder="Password" required="" />
             <input type="password" name="Confirm_Password" placeholder="Confirm Password" required="" />
-            <span style="color: #ffffff">Gender：</span><input type="radio" name="sex" value="Girl">Girl
-            <input type="radio" name="sex" value="Boy" >Boy
-            <input type="radio" name="sex" value="Secrecy" checked="checked">Secrecy
+            <span style="color: #ffffff">Gender：</span><input type="radio" name="sex" value="Girl">Female
+            <input type="radio" name="sex" value="Boy" >Male
+            <input type="radio" name="sex" value="Secrecy" checked="checked">Unknown
             <div class="submit-w3l">
                 <input type="submit" value="Sign up">
             </div>

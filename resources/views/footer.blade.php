@@ -6,7 +6,7 @@ FOOTER
     <footer class="bg-white border-top p-3 text-muted small">
         <div class="row align-items-center justify-content-between">
             <div>
-                <span class="navbar-brand mr-2"><strong>Plan</strong></span>  &copy;
+                <span class="navbar-brand mr-2"><strong>Calender Gpt</strong></span>  &copy;
                 <script>document.write(new Date().getFullYear())</script>
 
             </div>

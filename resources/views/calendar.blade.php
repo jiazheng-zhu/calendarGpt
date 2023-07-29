@@ -170,7 +170,7 @@ class Num_Chinese{
         echo "</tbody>";
         echo "</table>";
         ?>
-        <h3>A4 Template Calendar Planning</h3>
+
     </div>
 
 </div>

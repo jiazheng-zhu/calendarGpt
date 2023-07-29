@@ -9,9 +9,9 @@ HEADER
             <div class="row justify-content-between">
                 <div class="col-md-6 pt-6 pb-6 pr-6 align-self-center">
 
-                    <h1 class="display-4 secondfont mb-3 font-weight-bold">Sterling could jump 8% if Brexit deal gets approved by UK Parliament</h1>
+                    <h1 class="display-4 secondfont mb-3 font-weight-bold">A calandar to arrange your time</h1>
                     <p class="mb-3">
-                        Analysts told CNBC that the currency could hit anywhere between $1.35-$1.40 if the deal gets passed through the U.K. parliament.
+                        A web application designed to help you manage your time effectively and keep track of your daily schedule. With TimeKeeper, you can easily create and manage multiple calendars for different aspects of your life, such as work, personal appointments, and family events.
                     </p>
 
                 </div>
@@ -33,16 +33,16 @@ MAIN
         <div class="col-md-12 col-lg-12">
             <article class="article-post">
                 <p>
-                    Holy grail funding non-disclosure agreement advisor ramen bootstrapping ecosystem. Beta crowdfunding iteration assets business plan paradigm shift stealth mass market seed money rockstar niche market marketing buzz market.
+                    Time management is the most important aspect of exam preparation. More often than not, many students look at time as their enemy because they start preparing a little too late in a haphazard manner, which causes too much confusion.
                 </p>
                 <p>
-                    Burn rate release facebook termsheet equity technology. Interaction design rockstar network effects handshake creative startup direct mailing. Technology influencer direct mailing deployment return on investment seed round.
+                    Without proper time management tips, studying will not benefit you much because you won’t be able to organize your syllabus in sync with the amount of time you have.
                 </p>
                 <p>
-                    Termsheet business model canvas user experience churn rate low hanging fruit backing iteration buyer seed money. Virality release launch party channels validation learning curve paradigm shift hypotheses conversion. Stealth leverage freemium venture startup business-to-business accelerator market.
+                    This will lead to a lot of stress and anxiety, which will eventually affect your performance in the exam.
                 </p>
                 <p>
-                    Freemium non-disclosure agreement lean startup bootstrapping holy grail ramen MVP iteration accelerator. Strategy market ramen leverage paradigm shift seed round entrepreneur crowdfunding social proof angel investor partner network virality.
+                    Team Toppr(January 21st, 2019)
                 </p>
             </article>
 
