@@ -118,14 +118,14 @@ class Num_Chinese{
                     <h1>{{substr($date_month, 0, 7)}} </h1>
                 @endif
         <?php
-        // 获取该月份的天数
+        //  get the current month and year
         $days_in_month = cal_days_in_month(CAL_GREGORIAN, $month, $year);
-        // 获取该月份的第一天是星期几
+        // get  the first day of the month
         $first_day = date("N", strtotime($year . "-" . $month . "-01"));
-        // 定义每周显示的列数
+        // get the name of the month
         $cols = 7;
 
-        // 输出日历表格的头部www.kanjiri.com
+        //  set up the table
         echo "<table>";
         echo "<thead>";
         echo "<tr>";
@@ -140,15 +140,15 @@ class Num_Chinese{
         echo "</thead>";
         echo "<tbody>";
 
-        // 输出日历表格的主体
+        // start the table row
         echo "<tr>";
-        // 输出该月份的第一天之前的空白单元格
+        // output blank cells until the first of the month
         for ($i = 0; $i < $first_day; $i++) {
             echo "<td></td>";
         }
-        // 输出该月份的日期
+        // set variable to keep track of where we are in the loop
         for ($i = 1; $i <= $days_in_month; $i++) {
-            // 如果已经输出了一周的日期，开始新的一行
+            // display the day number in the cell
             if (($i + $first_day - 1) % $cols == 0) {
                 echo "</tr><tr>";
             }
@@ -160,13 +160,13 @@ class Num_Chinese{
             $huodong = "<br> <span style='color: #fff'>$data_count Plans</span>";
             echo "<td style='width: 50px'>" . "<span style='font-size: 25px;font-weight: 800'>$i</span>".$huodong . "</td>";
         }
-        // 输出该月份的最后一天之后的空白单元格
+        //      output blank cells until we reach the end of the month
         for ($i = $first_day + $days_in_month - 1; $i % $cols != $cols - 1; $i++) {
             echo "<td></td>";
         }
         echo "</tr>";
 
-        // 输出日历表格的尾部
+        // close the table
         echo "</tbody>";
         echo "</table>";
         ?>

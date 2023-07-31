@@ -47,7 +47,7 @@ class IndexController extends Controller
         if (empty($users_id)){
             return redirect('/login');
         }
-        $date = substr($date,0,10);//获取的日
+        $date = substr($date,0,10);//get the date
         if (!empty($date)){
             $users_plan = Users_plan::where('users_id',$users_id)->where('date','like','%'.$date.'%')->get();
         }else{
@@ -91,12 +91,12 @@ class IndexController extends Controller
         if (empty($users_id)){
             return redirect('/login');
         }
-        $date = substr($date,0,10);//获取的日
+        $date = substr($date,0,10);//get the date
 //        dump($date);
-        $users_plan_Urgent_time = strtotime($date)+86400;//获取的日期加一天时间戳
-        $users_plan_Urgent_time_big = strtotime($date)+259200;//获取的日期加3天时间戳
-        $users_plan_Urgent_date = date('Y-m-d',$users_plan_Urgent_time);//获取的日期加一天日期，时间戳转成日期
-        $users_plan_Urgent_date_big = date('Y-m-d',$users_plan_Urgent_time_big);//获取的日期加3天日期，时间戳转成日期
+        $users_plan_Urgent_time = strtotime($date)+86400;//add 1 day
+        $users_plan_Urgent_time_big = strtotime($date)+259200;//add 3 day
+        $users_plan_Urgent_date = date('Y-m-d',$users_plan_Urgent_time);// get the date add 1 day
+        $users_plan_Urgent_date_big = date('Y-m-d',$users_plan_Urgent_time_big);// get the date add 3 day
 
         $users_plan = Users_plan::where('users_id',$users_id)->where('date','like','%'.$date.'%')->get();
         $users_plan_incomplete = Users_plan::where('status',0)->where('users_id',$users_id)->where('date','like','%'.$date.'%')->get();
@@ -110,6 +110,7 @@ class IndexController extends Controller
         $messages = [
             ['role' => 'user', 'content' =>$plan],
         ];
+        // get the result from gpt-3
         $gpt_result = OpenAI::chat()->create([
             'model' => 'gpt-3.5-turbo',
             'messages' => $messages,
@@ -129,10 +130,10 @@ class IndexController extends Controller
             return redirect('/login');
         }
         if (empty($request->date)){
-            // 定义要显示的月份
+            // set the default month
             $month = date('m');
             $newstring = str_replace('0', '', $month);
-            // 定义要显示的年份
+            // set the default year
             $year = date('Y');
             $date = $year.'-'.$month;
             $date_month = date('Y-m-d');
